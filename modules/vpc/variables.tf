@@ -1,3 +1,8 @@
+variable "region" {
+  description = "region for deploying the VPC"
+  type        = string
+}
+
 variable "vpc_cidr" {
   description = "CIDR block for the VPC"
   type        = string
@@ -27,3 +32,5 @@ variable "destination_cidr_block" {
   description = "destination_cidr_block"
   type        = string
 }
+
+variable "vpc_name"{}
