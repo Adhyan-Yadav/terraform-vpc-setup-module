@@ -1,7 +1,7 @@
 module "webserver_vpc" {
   source = "../modules/vpc"
 
-  # Passing values from root to module
+  # Passing values from root module to terrafom (project) module
   region = var.region
 
   vpc_cidr             = var.vpc_cidr
