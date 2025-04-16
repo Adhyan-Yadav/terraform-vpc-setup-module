@@ -1,4 +1,21 @@
-.terraform/
-*.tfstate
-*.tfstate.backup
-.terraform.lock.hcl
+# Ignore the BACKEND directory and its contents
+BACKEND/.terraform
+BACKEND/.terraform.lock.hcl
+
+# Ignore .terraform directories and lock files
+**/.terraform/
+**/.terraform.lock.hcl
+
+# Ignore terraform state files
+**/terraform.tfstate
+
+# Don't ignore the VPC1/backend.tf file (include it explicitly)
+!VPC1/backend.tf
+
+# Ignore .terraform directories and lock files
+**/.terraform/
+**/.terraform.lock.hcl
+
+# Ignore terraform state files
+**/terraform.tfstate
+
